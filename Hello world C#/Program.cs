@@ -5,13 +5,16 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            Persona Jonnier = new Persona("Jonnier", 18, "Developer");
-            Persona Hanzeel = new Persona("Hanzeel", 14, "Musico");
-            Persona Carlos = new Persona("Carlos", 25, "Creativo");
-            Console.WriteLine(
-                $"{Jonnier.Nombre} {Hanzeel.Nombre} {Carlos.Nombre}"
-            );
-            
+            Calculadora myCalculadora = new Calculadora();
+            int suma = myCalculadora.sumar(3, 5);
+            int resta = myCalculadora.restar(3, 5);
+            int divicion = myCalculadora.dividir(3, 5);
+            int multiplicar = myCalculadora.multiplicar(3, 5);
+
+            Console.WriteLine($"Suma: {suma}");
+            Console.WriteLine($"Resta: {resta}");
+            Console.WriteLine($"Division: {divicion}");
+            Console.WriteLine($"Multiplicacion: {multiplicar}");
         }
     }
 }
